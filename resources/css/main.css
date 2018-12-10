@@ -1,0 +1,70 @@
+.bg-none {
+    background: none;
+}
+
+.left-panel {
+    background-image: url("../headshot.jpg");
+    background-position: 35% 0%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.right-panel {
+    background: rgb(13, 13, 13);
+    color: #d9d9d9;
+}
+
+.home-link {
+    display: inline-block;
+    border-bottom: 3px solid #222222;
+    color: #222222;
+    transition: 0.1s;
+}
+
+.home-link:hover {
+    text-decoration: none;
+    color: #666666;
+    border-bottom: 3px solid #666666;
+}
+
+.nametag {
+    width: 80%;
+    height: 125px;
+    position: absolute;
+        top: 85%;
+        left: 50%;
+    margin-left: -40%;
+    padding-top: 0.8em;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: #d9d9d9;
+    border-radius: 5px;
+}
+
+.nametag hr {
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(146, 146, 146, 0.75), rgba(0, 0, 0, 0));
+}
+
+#home-icon {
+    font-size: 0.8em;
+}
+
+.nav-item {
+    padding-right: 10px;
+}
+
+.dropdown-menu {
+    background: rgba(13, 13, 13, 0.8);
+}
+
+.dropdown-item {
+    color: #d9d9d9;
+}
+
+.dropdown-item:hover {
+    color: #d9d9d9;
+    background: rgba(25, 25, 25, 0.8);
+}
