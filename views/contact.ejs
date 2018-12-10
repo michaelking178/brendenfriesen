@@ -10,7 +10,10 @@
             <input class="form-control" type="text" name="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-            <textarea class="form-control" name="email" rows="10" placeholder="Enter your message here..." required></textarea>
+            <input class="form-control" type="text" name="organization" placeholder="Organization">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="message" rows="10" placeholder="Enter your message here..." required></textarea>
         </div>
         <button type="submit" class="btn btn-light">Submit</button>
     </form>
@@ -18,6 +21,11 @@
 
 <script>
 $(".left-panel").css("background-image", 'url("/headshot.jpg")');
+$(".home-link").addClass("home-link-dark");
+$(".photographer").addClass("photographer-dark");
+$(".photographer a").text("Brent Calis Photography");
+$(".photographer a").attr("href", "http://www.brentcalisphotography.com");
+
 </script>
 
 <% include partials/footer %>

@@ -1,6 +1,28 @@
-.bg-none {
-    background: none;
+
+/*------------------/
+/  GENERAL STYLING  /
+/------------------*/
+
+p {
+    padding-top: 5px;
+    line-height: 1.5;
+    font-size: 18px;
 }
+
+a {
+    font-size: 18px;
+    color: #d9d9d9;
+}
+
+a:hover {
+    color: #666666;
+    text-decoration: none;
+    transition: 0.075s;
+}
+
+/*---------------/
+/   LEFT PANEL   /
+/---------------*/
 
 .left-panel {
     background-image: url("../headshot.jpg");
@@ -9,25 +31,33 @@
     min-height: 100vh;
 }
 
-.right-panel {
-    background: rgb(13, 13, 13);
-    color: #d9d9d9;
-}
-
 .home-link {
     display: inline-block;
-    border-bottom: 3px solid #222222;
-    background-color: rgba(255, 224, 224, 0.65);
     border-radius: 5px;
     padding: 0 10px;
-    color: #222222;
     transition: 0.1s;
 }
 
-.home-link:hover {
+.home-link-dark {
+    border-bottom: 3px solid #222222;
+    color: #222222;
+}
+
+.home-link-dark:hover {
     text-decoration: none;
     color: #666666;
     border-bottom: 3px solid #666666;
+}
+
+.home-link-light {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.home-link-light:hover {
+    text-decoration: none;
+    color: #dddddd;
+    border-bottom: 3px solid #dddddd;
 }
 
 .nametag {
@@ -51,12 +81,34 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(146, 146, 146, 0.75), rgba(0, 0, 0, 0));
 }
 
+.photographer {
+    text-align: right;
+    padding: 3% 2%;
+}
+
+.photographer a {
+    font-size: 80%;
+}
+
+.photographer-dark a {
+    color: #222222;
+}
+
+.photographer a:hover {
+    color: #666666;
+    transition: 0.1s;
+}
+
 #home-icon {
     font-size: 0.8em;
 }
 
+/*-------------------------/
+/  RIGHT PANEL - NAV BAR   /
+/-------------------------*/
+
 .nav-item {
-    padding-right: 15px;
+    padding-right: 9px;
 }
 
 .dropdown-menu {
@@ -70,4 +122,21 @@
 .dropdown-item:hover {
     color: #d9d9d9;
     background: rgba(25, 25, 25, 0.8);
+}
+
+/*--------------/
+/  RIGHT PANEL  /
+/--------------*/
+
+.bg-none {
+    background: none;
+}
+
+.right-panel {
+    background: rgb(13, 13, 13);
+    color: #d9d9d9;
+}
+
+.panel-content {
+    margin-top: 15px;
 }
