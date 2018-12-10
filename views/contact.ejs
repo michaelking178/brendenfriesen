@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class="container panel-content">
+    <form>
+        <h1>Contact</h1>
+        <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="email" rows="10" placeholder="Enter your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-light">Submit</button>
+    </form>
+</div>
+
+<script>
+$(".left-panel").css("background-image", 'url("/headshot.jpg")');
+</script>
+
+<% include partials/footer %>
