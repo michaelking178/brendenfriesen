@@ -20,12 +20,13 @@
 </div>
 
 <script>
-$(".left-panel").css("background-image", 'url("/headshot.jpg")');
-$(".home-link").addClass("home-link-dark");
-$(".photographer").addClass("photographer-dark");
-$(".photographer a").text("Brent Calis Photography");
-$(".photographer a").attr("href", "http://www.brentcalisphotography.com");
-
+    $(document).ready(function(){
+        $(".left-panel").css("background-image", 'url("/headshot.jpg")');
+        $(".home-link").addClass("home-link-dark");
+        $(".photographer").addClass("photographer-dark");
+        $(".photographer a").text("Brent Calis Photography");
+        $(".photographer a").attr("href", "http://www.brentcalisphotography.com");
+    });
 </script>
 
 <% include partials/footer %>

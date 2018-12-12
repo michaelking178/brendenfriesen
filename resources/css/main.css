@@ -17,7 +17,11 @@ a {
 a:hover {
     color: #666666;
     text-decoration: none;
+
     transition: 0.075s;
+    -webkit-transition: 0.075s;
+    -moz-transition: 0.075s;
+    -o-transition: 0.075s;
 }
 
 /*---------------/
@@ -35,7 +39,11 @@ a:hover {
     display: inline-block;
     border-radius: 5px;
     padding: 0 10px;
+
     transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
 }
 
 .home-link-dark {
@@ -96,7 +104,11 @@ a:hover {
 
 .photographer a:hover {
     color: #666666;
+
     transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
 }
 
 #home-icon {
@@ -128,7 +140,28 @@ a:hover {
     background: rgba(50, 50, 50, 0.75);
 }
 
-.dropdown-menu {
+.dropdown-menu-left {
+    background: none;
+    border: none;
+    outline: none;
+
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.dropdown-menu-right {
+    background: rgba(13, 13, 13, 0.8);
+    border: none;
+    outline: none;
+}
+
+.dropdown-menu.collapsing {
+    display:block;
+}
+
+.dropdown-menu.show {
     background: rgba(13, 13, 13, 0.8);
 }
 
@@ -152,21 +185,4 @@ a:hover {
 
 .panel-content {
     margin-top: 15px;
-}
-
-/*--------------/
-/    QUERIES    /
-/--------------*/
-
-@media only screen and (max-width: 991px) {
-    .navbar-right {
-        display: none;
-        height: 0;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .navbar-left {
-        display: none;
-    }
 }
