@@ -103,12 +103,25 @@ a:hover {
     font-size: 0.8em;
 }
 
-/*-------------------------/
-/  RIGHT PANEL - NAV BAR   /
-/-------------------------*/
+/*-----------/
+/  NAV BAR   /
+/-----------*/
+
+.bg-none {
+    background: none;
+}
 
 .nav-item {
     padding-right: 9px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler:active {
+    outline: none;
+    background: rgba(225, 225, 225, 0.75);
 }
 
 .dropdown-menu {
@@ -128,10 +141,6 @@ a:hover {
 /  RIGHT PANEL  /
 /--------------*/
 
-.bg-none {
-    background: none;
-}
-
 .right-panel {
     background: rgb(13, 13, 13);
     color: #d9d9d9;
@@ -139,4 +148,21 @@ a:hover {
 
 .panel-content {
     margin-top: 15px;
+}
+
+/*--------------/
+/    QUERIES    /
+/--------------*/
+
+@media only screen and (max-width: 991px) {
+    .navbar-right {
+        display: none;
+        height: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-left {
+        display: none;
+    }
 }
