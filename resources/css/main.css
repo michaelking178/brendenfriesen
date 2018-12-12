@@ -124,6 +124,10 @@ a:hover {
     background: rgba(225, 225, 225, 0.75);
 }
 
+.navbar-dark .navbar-toggler:active {
+    background: rgba(50, 50, 50, 0.75);
+}
+
 .dropdown-menu {
     background: rgba(13, 13, 13, 0.8);
 }
