@@ -100,10 +100,12 @@ a:hover {
 
 .photographer-dark a {
     color: #222222;
+    background: rgba(212, 231, 240, 0.5);
+    border-radius: 2px;
 }
 
 .photographer a:hover {
-    color: #666666;
+    color: #999999;
 
     transition: 0.1s;
     -webkit-transition: 0.1s;
@@ -138,6 +140,11 @@ a:hover {
 
 .navbar-dark .navbar-toggler:active {
     background: rgba(50, 50, 50, 0.75);
+}
+
+.dropdown-menu {
+    margin-left: 75%;
+    width: 25%;
 }
 
 .dropdown-menu-left {
