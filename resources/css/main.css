@@ -33,6 +33,11 @@ a:hover {
     background-position: 35% 0%;
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 991px) {
+    
 }
 
 .home-link {
