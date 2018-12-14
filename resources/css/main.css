@@ -36,10 +36,6 @@ a:hover {
     background-size: cover;
 }
 
-@media only screen and (max-width: 991px) {
-    
-}
-
 .home-link {
     display: inline-block;
     border-radius: 5px;
