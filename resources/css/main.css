@@ -177,7 +177,7 @@ a:hover {
 }
 
 .dropdown-menu-right {
-    background: none;
+    background: rgba(13, 13, 13, 0.9);
     border: none;
     outline: none;
 }
