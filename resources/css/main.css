@@ -37,8 +37,8 @@ a:hover {
     background-image: url("../headshot.jpg");
     background-position: 35% 0%;
     background-repeat: no-repeat;
-    min-height: 100vh;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .home-link {
@@ -154,10 +154,12 @@ a:hover {
 .dropdown-menu {
     margin-left: auto;
     width: 25%;
+
 }
 
 .dropdown-menu-left {
-    background: none;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
     border: none;
     outline: none;
 
@@ -175,17 +177,17 @@ a:hover {
 }
 
 .dropdown-menu-right {
-    background: rgba(13, 13, 13, 0.8);
+    background: none;
     border: none;
     outline: none;
 }
 
-.dropdown-menu.collapsing {
-    display:block;
+.dropdown-menu-right .dropdown-item {
+    color: #d9d9d9;
 }
 
-.dropdown-menu.show {
-    background: rgba(13, 13, 13, 0.8);
+.dropdown-menu.collapsing {
+    display:block;
 }
 
 .dropdown-item {
@@ -195,6 +197,15 @@ a:hover {
 .dropdown-item:hover {
     color: #d9d9d9;
     background: rgba(25, 25, 25, 0.8);
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-overlay {
+        position: absolute;
+        top: 50px;
+        background: rgba(13, 13, 13, 0.9);
+        width: 35%;
+    }
 }
 
 /*--------------/
