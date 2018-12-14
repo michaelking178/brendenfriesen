@@ -3,6 +3,10 @@
 /  GENERAL STYLING  /
 /------------------*/
 
+body {
+    background-color: rgb(13, 13, 13);;
+}
+
 p {
     padding-top: 5px;
     line-height: 1.5;
