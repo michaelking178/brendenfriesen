@@ -144,7 +144,7 @@ a:hover {
 }
 
 .dropdown-menu {
-    /* margin-left: 75%; */
+    margin-left: auto;
     width: 25%;
 }
 
