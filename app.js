@@ -48,12 +48,12 @@ app.post("/send", function(req, res){
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true, // true for 465, false for other ports
+        host: 'smtp.sendgrid.net',
+        port: 587,
+        secure: false, // true for 465, false for other ports
         auth: {
-            user: "mack178@gmail.com", // generated ethereal user
-            pass: "Mendelssohn1" // generated ethereal password
+            user: "apikey", // generated ethereal user
+            pass: "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" // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
