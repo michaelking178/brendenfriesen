@@ -62,7 +62,7 @@ app.post("/send", function(req, res){
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Brenden Friesen Official Website" <admin@brendenfriesen.com>', // sender address
+        from: '"Brenden Friesen Official Website" <michael.ac.king@outlook.com>', // sender address
         to: 'mack178@hotmail.com', // list of receivers
         subject: 'New Contact Form Message', // Subject line
         text: '', // plain text body
