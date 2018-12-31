@@ -53,7 +53,7 @@ app.post("/send", function(req, res){
         secure: false, // true for 465, false for other ports
         auth: {
             user: "apikey", // generated ethereal user
-            pass: "***REMOVED***" // generated ethereal password
+            pass: "" // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
