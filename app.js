@@ -52,8 +52,8 @@ app.post("/send", function(req, res){
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: "apikey", // generated ethereal user
-            pass: "" // generated ethereal password
+            user: api.user, // SendGrid API
+            pass: api.pass // SendGrid key
         },
         tls: {
             rejectUnauthorized: false
