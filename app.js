@@ -64,7 +64,7 @@ app.post("/send", function(req, res){
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Brenden Friesen Official Website" <michael.ac.king@outlook.com>', // sender address
-        to: 'mack178@hotmail.com', // list of receivers
+        to: 'brendenfriesen@gmail.com', // list of receivers
         subject: 'New Contact Form Message', // Subject line
         text: '', // plain text body
         html: output // html body
@@ -78,7 +78,7 @@ app.post("/send", function(req, res){
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-        res.render("contact", {msg: "Email has been sent."});
+        res.render("contact", {msg: "Your message has been sent."});
     });
 });
 
