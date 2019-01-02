@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const sendGrid = require("./api");
 
 const app = express();
 app.set("view engine", "ejs");
@@ -52,8 +53,8 @@ app.post("/send", function(req, res){
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: api.user, // SendGrid API
-            pass: api.pass // SendGrid key
+            user: sendGrid.user, // SendGrid API
+            pass: sendGrid.pass // SendGrid key
         },
         tls: {
             rejectUnauthorized: false
