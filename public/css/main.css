@@ -3,14 +3,25 @@
 /  GENERAL STYLING  /
 /------------------*/
 
+.container {
+    max-width: 997px;
+}
+
 body {
     background-color: rgb(13, 13, 13);;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.15ch;
+}
+
+.page-title {
+    margin-bottom: 1.5rem;
 }
 
 p {
     padding-top: 5px;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -54,6 +65,7 @@ a:hover {
 
 .home-link-dark {
     border-bottom: 3px solid #222222;
+    font-weight: 400;
     color: #222222;
 }
 
@@ -101,6 +113,7 @@ a:hover {
 }
 
 .photographer {
+    font-weight: 400;
     text-align: right;
     padding-top: 3%;
     padding-right: 2%;
@@ -234,6 +247,10 @@ a:hover {
 
 .panel-content {
     margin-top: 15px;
+}
+
+#read-more {
+    font-weight: 400;
 }
 
 /*-------------/

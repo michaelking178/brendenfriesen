@@ -1,8 +1,10 @@
 <% include partials/header %>
 
 <div class="container panel-content">
-    <form action="send" method="POST">
+    <div class="page-title">
         <h1>Contact</h1>
+    </div>
+    <form action="send" method="POST">
         <p><%= msg %></p>
         <div class="form-group">
             <input class="form-control" type="text" name="name" placeholder="Name" required>
