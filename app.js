@@ -9,7 +9,11 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-// Routes
+//------------------|
+//----- ROUTES -----|
+//------------------|
+
+// Main Routes
 app.get("/", function(req, res){
     res.redirect("/index");
 });
@@ -26,14 +30,37 @@ app.get("/calendar", function(req, res){
     res.render("calendar");
 });
 
-app.get("/press", function(req, res){
-    res.render("press");
-});
-
 app.get("/contact", function(req, res){
     res.render("contact", {msg:""});
 });
 
+// Media Routes
+app.get("/media/audio", function(req, res){
+    res.render("media/audio");
+});
+
+app.get("/media/video", function(req, res){
+    res.render("media/video");
+});
+
+app.get("/media/images", function(req, res){
+    res.render("media/images");
+});
+
+// Repertoire Routes
+app.get("/repertoire/opera", function(req, res){
+    res.render("repertoire/opera");
+});
+
+app.get("/repertoire/concert", function(req, res){
+    res.render("repertoire/concert");
+});
+
+app.get("/repertoire/recital", function(req, res){
+    res.render("repertoire/recital");
+});
+
+// Contact Form Route
 app.post("/send", function(req, res){
     const output = `
         <p>You have a new contact request</p>
