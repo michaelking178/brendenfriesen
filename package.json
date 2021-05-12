@@ -13,6 +13,6 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "nodemailer": "^5.0.0"
+    "nodemailer": "^6.4.16"
   }
 }
